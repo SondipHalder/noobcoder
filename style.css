@@ -1,0 +1,386 @@
+/* Defult code */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: arial;
+    background-color: #ddd;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.t_center{
+    text-align: center;
+}
+.t_right{
+    text-align: right;
+}
+.t_left{
+    text-align: left;
+}
+.clearfix,.f::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+.manu-fix{
+    width: 95%;
+    margin: auto;
+}
+.fix{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+/* costome code here */
+header{
+    background-color: #00000066;
+    height: 65px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+}
+.header{
+    width: 95%;
+    margin: auto;
+}
+.header-left{
+    width: 30%;
+}
+.header-left .header-logo{
+    height: 60px;
+}
+.header-left .header-logo img{}
+.header-right{
+    width: 70%;
+}
+.header-right nav{}
+.header-right nav ul{
+    list-style: none;
+    text-align: right;
+}
+.header-right nav ul li{
+    display: inline-block;
+    position: relative;
+}
+.header-right nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 22px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.header-right nav ul li a span{}
+.header-right nav ul li a:hover{}
+.header-right nav ul li a::after{
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: orange;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+    transform: scale(0);
+    
+}
+.header-right nav ul li a:hover::after{
+visibility: visible;
+opacity: 1;
+transform: scale(1);
+}
+.fa{
+    font-size: 15px;
+    padding-left: 10px;
+}
+/* banner-part */
+.b_btn:hover{
+background-color: #fff;
+color: orange;
+}
+.banner-p{
+    background-image: url(https://i.ibb.co/YQRKBH9/ia-200000019.jpg);
+    background-position: 0px -280px;
+    background-size: cover;
+    padding: 200px 0px;
+    ;;position: relative;;;
+    z-index: 98;
+}
+.banner-p::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.banner-contant{
+    text-align: center;
+}
+.banner-contant h1{
+    color: white;
+    font-size: 70px;
+    display: inline-block;
+    
+}
+.banner-contant h1::before{
+    contain: "ddd";
+    width: 70px;
+    height: 6px;
+    background-color: #fff;
+   
+}
+.banner-contant h1::after{}
+.banner-contant  h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-spacing: 15px;
+    padding-top: 12px;
+    
+}
+.banner-contant  h2 span .fa-dash{}
+.banner-contant a{
+    color: white;
+    background: orange;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: .4s;
+}
+/* inforamation section */
+.information{
+    padding: 60px 0px;
+}
+.infoma{
+    /* background-color:
+    white; */
+    /* padding: 70px 0px; */
+    /* margin-left: 11px; */
+}
+.item{
+    width: 20%;
+    margin-left: 41px;
+    background-color: white;
+    padding: 39px 13px;
+}
+.item span{}
+.item span img{
+    transition: .5s;
+}
+.item h3{
+    color: black;
+    text-transform: uppercase;
+}
+.item p{
+    color: black;
+    padding: 30px 0px;
+    
+}
+.item a{
+    color: white;
+    display: inline-block;
+    background-color: orange;
+    text-decoration: none;
+    padding: 10px 45px;
+    border-radius: 5px;
+    transition: .5s;
+}
+.item:hover a{
+    background-color:white;
+    color: orange;
+
+}
+/* .item span{
+    background-color: rgba(194, 213, 193, 0.822);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px 10px;
+} */
+.item:hover img{
+    transform: rotateY(360deg);
+}
+/* About */
+.About{}
+.About{}
+.About .fix .about-cotanent{
+  
+}
+.About .fix .about-cotanent .about-video{
+    width: 50%;
+}
+.About .fix .about-cotanent .about-con{
+    width: 48%;
+    text-align: left;
+    padding: 60px 0px;
+}
+.About .fix .about-cotanent .about-con p{
+    
+font-size: 15px;
+    
+font-weight: 500;
+    
+margin-bottom: 17px;
+}
+.bbt{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background: black;
+    padding: 10px 24px;
+}
+.bb{
+    color: rgb(231, 169, 56);
+}
+.from{
+    padding: 130px 0px 40px 0px;
+}
+.from-left{
+    width: 50%;
+
+}
+.from-right{
+    width: 50%;
+}
+input{
+    border: none;
+    height: 25px;
+    display: inline-block;
+    margin-bottom: 7px;
+    width: 466px;
+    padding: 10px;
+    border-radius: 5px;
+    /* margin-left: 61px; */
+}
+textarea{
+    border: none;
+    height: 25px;
+    display: inline-block;
+    margin-bottom: 7px;
+    height: 103px;
+    width: 466px;
+    /* margin-left: 61px; */
+    padding: 10px;
+    border-radius: 5px;
+}
+.b{
+    text-align: left;
+}
+.b h1{
+    padding: ;
+    padding: 36px 0px;
+    font-size: 33px;
+}
+.b p{
+    width: 72%;
+    padding-bottom: 58px;
+}
+.ll{
+    display: inline-block;
+    color: white;
+    background-color: #baa275;
+    padding: 23px 0px;
+    width: 22%;
+    line-height: 4px;
+    margin-top: 10px;
+    transition: .5s;
+}
+/* Footer item */
+footer{
+    padding: 30px 0px;
+    background-color: gray;
+}
+footer .footer-left{
+    width: 50%;
+}
+footer .footer-left p{
+    padding-left: 72px;
+    color: white;
+    font-size: 20px;
+}
+
+footer .footer-right{
+    width: 50%;
+    text-align: center;
+}
+footer .footer-right ul{
+    list-style: none;
+}
+footer .footer-right ul li{
+    display: inline-block;
+}
+footer .footer-right ul li a{
+    display: inline-block;
+    padding: 0px 15px;
+    color: #ddd;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .5s;
+}
+footer .footer-right ul li a:hover{
+    color: black;
+}
+ul li{
+    position: relative;
+}
+.dr{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 300px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    visibility: hidden;
+    opacity: 1;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin:center;
+}
+.dr li{
+    display: block !important;
+    text-align: center !important;
+}
+.dr li a{
+    color: black !important;
+}
+ul li:hover .dr{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+input{
+    transition: .5s;
+}
+textarea{
+    transition: .5s;
+}
+textarea:hover{
+    border: 2px solid rgb(125, 125, 191);
+    padding: 10px;
+}
+input:hover{
+    border: 2px solid rgb(125, 125, 191);
+}
+.ll:hover{
+    background-color: black;
+    border: none;
+}
